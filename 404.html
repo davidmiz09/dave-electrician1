@@ -3,6 +3,12 @@
 
   <head>
     <base href="/dave-electrician1/">
+    <script>
+  // Redirect back to the subfolder if the router gets lost
+  if (!window.location.pathname.includes('/dave-electrician1/')) {
+    window.history.replaceState(null, '', '/dave-electrician1/');
+  }
+</script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
