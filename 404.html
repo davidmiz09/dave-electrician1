@@ -8,6 +8,15 @@
   if (!window.location.pathname.includes('/dave-electrician1/')) {
     window.history.replaceState(null, '', '/dave-electrician1/');
   }
+      <script>
+  (function() {
+    // If we are in a subfolder but the app thinks we are at root
+    var repoName = '/dave-electrician1/';
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      window.history.replaceState(null, '', repoName);
+    }
+  })();
+</script>
 </script>
     <meta charset="UTF-8" />
     <meta
@@ -21,7 +30,7 @@
       body { direction: rtl; text-align: right; }
       * { direction: rtl; }
     </style>
-    <script type="module" crossorigin src="./assets/index-DRL64xIn.js"></script>
+    <script type="module" crossorigin src="./assets/index-DkP1ko8d.js" data-base="/dave-electrician1/"></script>
 <link rel="stylesheet" crossorigin href="./assets/index-DkH84w4a.css">
   </head>
 
