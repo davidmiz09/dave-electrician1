@@ -32,6 +32,19 @@
     </style>
     <script type="module" crossorigin src="./assets/index-DkP1ko8d.js" data-base="/dave-electrician1/"></script>
 <link rel="stylesheet" crossorigin href="./assets/index-DkH84w4a.css">
+  <script>
+  // This script forces the app to recognize the /dave-electrician1/ folder
+  (function() {
+    var repo = '/dave-electrician1/';
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      window.history.replaceState(null, '', repo);
+    }
+    // If the user lands on the 404 page, this forces a reload to the home page
+    if (document.title.includes('404') || window.location.pathname === repo + '404') {
+       window.location.href = repo;
+    }
+  })();
+</script>
   </head>
 
   <body>
