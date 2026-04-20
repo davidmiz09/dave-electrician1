@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 
-  <head>
-    <base href="/dave-electrician1/">
-    <script>
-  // Redirect back to the subfolder if the router gets lost
-  if (!window.location.pathname.includes('/dave-electrician1/')) {
-    window.history.replaceState(null, '', '/dave-electrician1/');
-  }
-      <script>
-  (function() {
-    // If we are in a subfolder but the app thinks we are at root
-    var repoName = '/dave-electrician1/';
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-      window.history.replaceState(null, '', repoName);
-    }
-  })();
-</script>
-</script>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/dave-electrician1/">
+  
+  <link rel="stylesheet" crossorigin href="./assets/index-DJvdK7eK.css">
+  <script type="module" crossorigin src="./assets/index-DkP1ko8d.js"></script>
+
+  <script>
+    // This script forces the React Router to stay inside the subfolder
+    (function() {
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        window.history.replaceState(null, '', '/dave-electrician1/');
+      }
+    })();
+  </script>
+</head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
