@@ -2,45 +2,22 @@
 <html lang="he" dir="rtl">
 
   <head>
-    <base href="/dave-electrician1/">
-    <script>
-  (function() {
-    // If we are in a subfolder but the app thinks we are at root
-    var repoName = '/dave-electrician1/';
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-      window.history.replaceState(null, '', repoName);
-    }
-  })();
-</script>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Dave's Electric - Professional Electrician Services</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <style>
-      body { direction: rtl; text-align: right; }
-      * { direction: rtl; }
-    </style>
-    <link rel="stylesheet" crossorigin href="./assets/index-DJvdK7eK.css">
-<script type="module" crossorigin src="./assets/index-DkP1ko8d.js" data-base="/dave-electrician1/"></script>
-  <script>
-  // This script forces the app to recognize the /dave-electrician1/ folder
-  (function() {
-    var repo = '/dave-electrician1/';
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-      window.history.replaceState(null, '', repo);
-    }
-    // If the user lands on the 404 page, this forces a reload to the home page
-    if (document.title.includes('404') || window.location.pathname === repo + '404') {
-       window.location.href = repo;
-    }
-  })();
-</script>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/dave-electrician1/">
+  
+  <link rel="stylesheet" crossorigin href="./assets/index-DJvdK7eK.css">
+  <script type="module" crossorigin src="./assets/index-DkP1ko8d.js"></script>
 
+  <script>
+    // This script forces the React Router to stay inside the subfolder
+    (function() {
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        window.history.replaceState(null, '', '/dave-electrician1/');
+      }
+    })();
+  </script>
+</head>
   <body>
     <script id="manus-runtime">window.__MANUS_HOST_DEV__ = false;
 (function(){"use strict";var Mr={exports:{}},Kn={};/**
